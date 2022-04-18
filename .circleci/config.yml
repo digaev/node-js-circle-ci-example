@@ -13,6 +13,9 @@ jobs:
           name: Install NVM
           command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
       - run:
+          name: Init NVM
+          command: source ~/.bashrc
+      - run:
           name: Node.js 12
           command: nvm install --lts=erbium && npm -g npm && npm run test
       - run:
