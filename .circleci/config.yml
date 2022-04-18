@@ -13,15 +13,15 @@ jobs:
           name: Install NVM
           command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
       - run:
-          name: Init NVM
-          command: source ~/.nvm/nvm.sh
-      - run:
           name: Node.js 12
-          command: source ~/.nvm/nvm.sh && nvm install --lts=erbium && npm -g npm && npm run test
+          command: source ~/.nvm/nvm.sh && nvm install --lts=erbium && npm i -g npm && npm run test
       - run:
           name: Node.js 14
           command: source ~/.nvm/nvm.sh && nvm install --lts=fermium && npm -g npm && npm run test
       - run:
           name: Node.js 16
-          command: source ~/.nvm/nvm.sh && nvm install --lts=gallium && npm -g npm && npm run coveralls
+          command: source ~/.nvm/nvm.sh && nvm install --lts=gallium && npm -g npm && npm run test
+      - run:
+          name: Coveralls
+          command: source ~/.nvm/nvm.sh && nvm install --lts=gallium && npm -g npm && npm run test
       - coveralls/upload
