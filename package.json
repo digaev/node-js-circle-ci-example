@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "coverage": "nyc --reporter=html npm run test",
-    "coveralls": "nyc --reporter=text-lcov npm run test | coveralls",
+    "coveralls": "nyc --reporter=lcov npm run test",
     "test": "NODE_ENV=test mocha './test/**/*.spec.js'"
   },
   "repository": {
