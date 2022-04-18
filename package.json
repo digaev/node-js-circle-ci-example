@@ -1,7 +1,7 @@
 {
-  "name": "js-travis-ci-example",
+  "name": "node-js-circle-ci-example",
   "version": "1.0.0",
-  "description": "Node.js Travis-CI example",
+  "description": "Node.js CircleCI Example",
   "main": "./src/index.js",
   "scripts": {
     "coverage": "nyc --reporter=html npm run test",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/digaev/node-js-travis-ci-example.git"
+    "url": "git+ssh://git@github.com/digaev/node-js-circle-ci-example.git"
   },
   "keywords": [
-    "coveralls",
-    "travis-ci"
+    "circle-ci",
+    "coveralls"
   ],
   "author": "Nikolay Digaev <ffs.cmp@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/digaev/node-js-travis-ci-example/issues"
+    "url": "https://github.com/digaev/node-js-circle-ci-example/issues"
   },
-  "homepage": "https://github.com/digaev/node-js-travis-ci-example#readme",
+  "homepage": "https://github.com/digaev/node-js-circle-ci-example#readme",
   "devDependencies": {
     "chai": "^4.3.6",
     "coveralls": "^3.1.1",

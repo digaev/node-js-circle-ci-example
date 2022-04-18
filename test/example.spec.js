@@ -1,9 +1,9 @@
 const { assert } = require("chai");
 
-const example = require('../src');
+const { circleCI } = require("../src");
 
-describe('example', () => {
-  it('returns description', () => {
-    assert.equal(example(), 'Node.js Travis-CI example');
+describe('circleCI', () => {
+  it('returns the name', () => {
+    assert.equal(circleCI(), 'CircleCI');
   });
 });

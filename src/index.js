@@ -1,3 +1,3 @@
-module.exports = function example() {
-  return 'Node.js Travis-CI example';
+module.exports.circleCI = function circleCI() {
+  return 'CircleCI';
 }
