@@ -1,0 +1,15 @@
+version: 2.1
+
+orbs:
+  coveralls: coveralls/coveralls@1.0.6
+
+jobs:
+  build:
+    docker:
+      - image: 'circleci/node:12.22.12'
+    steps:
+      - checkout
+      - run:
+          name: Install and Make
+          command: npm install && npm run coveralls
+      - coveralls/upload
