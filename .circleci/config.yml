@@ -17,11 +17,11 @@ jobs:
           command: source ~/.nvm/nvm.sh
       - run:
           name: Node.js 12
-          command: nvm install --lts=erbium && npm -g npm && npm run test
+          command: source ~/.nvm/nvm.sh && nvm install --lts=erbium && npm -g npm && npm run test
       - run:
           name: Node.js 14
-          command: nvm install --lts=fermium && npm -g npm && npm run test
+          command: source ~/.nvm/nvm.sh && nvm install --lts=fermium && npm -g npm && npm run test
       - run:
           name: Node.js 16
-          command: nvm install --lts=gallium && npm -g npm && npm run coveralls
+          command: source ~/.nvm/nvm.sh && nvm install --lts=gallium && npm -g npm && npm run coveralls
       - coveralls/upload
